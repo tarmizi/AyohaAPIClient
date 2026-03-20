@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApiResit</RootNamespace>
+    <AssemblyName>WebApiResit</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Views\AdvertisementAnalsys\" />
+    <Folder Include="Views\AdvertisementApprovalStatusLog\" />
+    <Folder Include="Views\AdvertisementApprovalStatus\" />
+    <Folder Include="Views\AdvertisementAudio\" />
+    <Folder Include="Views\AdvertisementImages\" />
+    <Folder Include="Views\AdvertisementLinkModule\" />
+    <Folder Include="Views\AdvertisementType\" />
+    <Folder Include="Views\AdvertisementVideo\" />
+    <Folder Include="Views\Advertisement\" />
+    <Folder Include="Views\AyohaEnterprisesUserStatus\" />
+    <Folder Include="Views\AyohaEnterprisesUserType\" />
+    <Folder Include="Views\AyohaEnterprisesUser\" />
+    <Folder Include="Views\AyohaEnterpriseUser\" />
+    <Folder Include="Views\AyohaeWalletAccountSetting\" />
+    <Folder Include="Views\AyohaeWalletTransactionCashOut\" />
+    <Folder Include="Views\AyohaeWalletTransaction\" />
+    <Folder Include="Views\AyohaeWallet\" />
+    <Folder Include="Views\AyohaHotMerchant\" />
+    <Folder Include="Views\AyohaMembershipLevelDesc\" />
+    <Folder Include="Views\AyohaMerchantInfo_MembershipLoyaltyProgram\" />
+    <Folder Include="Views\AyohaMerchantReview\" />
+    <Folder Include="Views\AyohaNotificationMasterEnterprises\" />
+    <Folder Include="Views\AyohaNotificationMaster\" />
+    <Folder Include="Views\AyohaNotification\" />
+    <Folder Include="Views\AyohaPaymentMethod\" />
+    <Folder Include="Views\AyohaPointHistory\" />
+    <Folder Include="Views\AyohaRedeemPrizeHistoryLog\" />
+    <Folder Include="Views\AyohaRedeemPrizeHistory\" />
+    <Folder Include="Views\AyohaRedeemPrize\" />
+    <Folder Include="Views\AyohaRewardContestant\" />
+    <Folder Include="Views\AyohaRewardContestTapAndWinLog\" />
+    <Folder Include="Views\AyohaRewardContestTapAndWinPrizeAmount\" />
+    <Folder Include="Views\AyohaRewardContestTapAndWinSponsor\" />
+    <Folder Include="Views\AyohaRewardContest\" />
+    <Folder Include="Views\AyohaRewardContest_SelfieAndWin\" />
+    <Folder Include="Views\AyohaRewardEvent\" />
+    <Folder Include="Views\AyohaRewardEvent_Respond\" />
+    <Folder Include="Views\AyohaRewardMembershipTermAndCondition\" />
+    <Folder Include="Views\AyohaRewardPoint\" />
+    <Folder Include="Views\AyohaRewardVoucher_EntitledUser\" />
+    <Folder Include="Views\AyohaScanQrCodeActivity\" />
+    <Folder Include="Views\AyohaStoreAnalsys\" />
+    <Folder Include="Views\AyohaStoreOrder\" />
+    <Folder Include="Views\AyohaStorePayment\" />
+    <Folder Include="Views\AyohaStore_Cart\" />
+    <Folder Include="Views\AyohaStore_LikeStatus\" />
+    <Folder Include="Views\AyohaStore_SaleItem\" />
+    <Folder Include="Views\AyohaStore_SaleItem_MembershipCardUsed\" />
+    <Folder Include="Views\AyohaStore_ShippingAddress\" />
+    <Folder Include="Views\AyohaUserGroup\" />
+    <Folder Include="Views\AyohaUserProfileBankAccount\" />
+    <Folder Include="Views\AyohaUserProfile\" />
+    <Folder Include="Views\AyohaUserStampCard\" />
+    <Folder Include="Views\BranchEnterprise\" />
+    <Folder Include="Views\BusinessMode\" />
+    <Folder Include="Views\BusinessTypeGroup\" />
+    <Folder Include="Views\BusinessType\" />
+    <Folder Include="Views\ChargeDeliverySetting\" />
+    <Folder Include="Views\CloudReceiptsMobileUser\" />
+    <Folder Include="Views\Customer\" />
+    <Folder Include="Views\DashboardAyohaRewardSummary\" />
+    <Folder Include="Views\DashboardAyohaUser\" />
+    <Folder Include="Views\DashboardMerchant\" />
+    <Folder Include="Views\DiscountCampaing\" />
+    <Folder Include="Views\Email\" />
+    <Folder Include="Views\EnterprisesBranchType\" />
+    <Folder Include="Views\EnterprisesCheckIn\" />
+    <Folder Include="Views\EnterprisesCoverMedia\" />
+    <Folder Include="Views\EnterprisesFavorite\" />
+    <Folder Include="Views\EnterprisesOnlineStore\" />
+    <Folder Include="Views\EnterpriseSubscriber\" />
+    <Folder Include="Views\EnterprisesWorkingHour\" />
+    <Folder Include="Views\Enterprises\" />
+    <Folder Include="Views\Enterprise\" />
+    <Folder Include="Views\FlatBill\" />
+    <Folder Include="Views\GPSUser\" />
+    <Folder Include="Views\LoyaltyCardBackgroundImage\" />
+    <Folder Include="Views\LoyaltyCardMember\" />
+    <Folder Include="Views\LoyaltyPointRedeemPrizeHistoryLog\" />
+    <Folder Include="Views\LoyaltyPointRedeemPrizeHistory\" />
+    <Folder Include="Views\LoyaltyPoint\" />
+    <Folder Include="Views\LoyaltyStamp\" />
+    <Folder Include="Views\MasterMemberships\" />
+    <Folder Include="Views\MembershipCardCampaingEntitled\" />
+    <Folder Include="Views\MembershipCardEnterprisesEntitled\" />
+    <Folder Include="Views\MembershipCardExtent\" />
+    <Folder Include="Views\MembershipCardPaymentCycle\" />
+    <Folder Include="Views\MembershipCardPaymentPlan\" />
+    <Folder Include="Views\MembershipCardTerms\" />
+    <Folder Include="Views\MembershipCard\" />
+    <Folder Include="Views\MembershipLoyaltyProgramMaster\" />
+    <Folder Include="Views\Memberships\" />
+    <Folder Include="Views\Membership\" />
+    <Folder Include="Views\MerchantLinkType\" />
+    <Folder Include="Views\MerchantLoyaltyCampaign\" />
+    <Folder Include="Views\MerchantReward\" />
+    <Folder Include="Views\Module\" />
+    <Folder Include="Views\Notifications\" />
+    <Folder Include="Views\OneSignal\" />
+    <Folder Include="Views\PaymentGateWayBillTransaction\" />
+    <Folder Include="Views\PaymentGateway\" />
+    <Folder Include="Views\PaymentMethod\" />
+    <Folder Include="Views\PointCampaignPointer\" />
+    <Folder Include="Views\PointCampaignRedeemItemSetting\" />
+    <Folder Include="Views\PointCampaign\" />
+    <Folder Include="Views\Receipts\" />
+    <Folder Include="Views\ReceiptTemplate\" />
+    <Folder Include="Views\RecipientSpecificMember\" />
+    <Folder Include="Views\RedeemApprovalStatus\" />
+    <Folder Include="Views\RedeemItem\" />
+    <Folder Include="Views\SMS\" />
+    <Folder Include="Views\StampCampaignEnterprises\" />
+    <Folder Include="Views\StampCampaignRubberStamp\" />
+    <Folder Include="Views\StampCampaignStamper\" />
+    <Folder Include="Views\StampCampaign\" />
+    <Folder Include="Views\StampCard\" />
+    <Folder Include="Views\StampContentDefaultTemplate\" />
+    <Folder Include="Views\Subscriber\" />
+    <Folder Include="Views\Subscriptions\" />
+    <Folder Include="Views\TemporaryStampQrCode\" />
+    <Folder Include="Views\TrackerDevice\" />
+    <Folder Include="Views\VIEW_MerchantDashboard\" />
+    <Folder Include="Views\VIEW_merchantperk_View\" />
+    <Folder Include="Views\VisitorAnalsys\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AdvertisementAnalsysController.cs" />
+    <Compile Include="Controllers\AdvertisementApprovalStatusController.cs" />
+    <Compile Include="Controllers\AdvertisementApprovalStatusLogController.cs" />
+    <Compile Include="Controllers\AdvertisementAudioController.cs" />
+    <Compile Include="Controllers\AdvertisementController.cs" />
+    <Compile Include="Controllers\AdvertisementImagesController.cs" />
+    <Compile Include="Controllers\AdvertisementLinkModuleController.cs" />
+    <Compile Include="Controllers\AdvertisementTypeController.cs" />
+    <Compile Include="Controllers\AdvertisementVideoController.cs" />
+    <Compile Include="Controllers\AyohaEnterprisesUserController.cs" />
+    <Compile Include="Controllers\AyohaEnterprisesUserStatusController.cs" />
+    <Compile Include="Controllers\AyohaEnterprisesUserTypeController.cs" />
+    <Compile Include="Controllers\AyohaEnterpriseUserController.cs" />
+    <Compile Include="Controllers\AyohaeWalletAccountSettingController.cs" />
+    <Compile Include="Controllers\AyohaeWalletController.cs" />
+    <Compile Include="Controllers\AyohaeWalletTransactionCashOutController.cs" />
+    <Compile Include="Controllers\AyohaeWalletTransactionController.cs" />
+    <Compile Include="Controllers\AyohaHotMerchantController.cs" />
+    <Compile Include="Controllers\AyohaMembershipLevelDescController.cs" />
+    <Compile Include="Controllers\AyohaMerchantInfo_MembershipLoyaltyProgramController.cs" />
+    <Compile Include="Controllers\AyohaMerchantReviewController.cs" />
+    <Compile Include="Controllers\AyohaNotificationController.cs" />
+    <Compile Include="Controllers\AyohaNotificationMasterController.cs" />
+    <Compile Include="Controllers\AyohaNotificationMasterEnterprisesController.cs" />
+    <Compile Include="Controllers\AyohaPaymentMethodController.cs" />
+    <Compile Include="Controllers\AyohaPointHistoryController.cs" />
+    <Compile Include="Controllers\AyohaRedeemPrizeController.cs" />
+    <Compile Include="Controllers\AyohaRedeemPrizeHistoryController.cs" />
+    <Compile Include="Controllers\AyohaRedeemPrizeHistoryLogController.cs" />
+    <Compile Include="Controllers\AyohaRewardContestantController.cs" />
+    <Compile Include="Controllers\AyohaRewardContestController.cs" />
+    <Compile Include="Controllers\AyohaRewardContestTapAndWinLogController.cs" />
+    <Compile Include="Controllers\AyohaRewardContestTapAndWinPrizeAmountController.cs" />
+    <Compile Include="Controllers\AyohaRewardContestTapAndWinSponsorController.cs" />
+    <Compile Include="Controllers\AyohaRewardContest_SelfieAndWinController.cs" />
+    <Compile Include="Controllers\AyohaRewardEventController.cs" />
+    <Compile Include="Controllers\AyohaRewardEvent_RespondController.cs" />
+    <Compile Include="Controllers\AyohaRewardMembershipTermAndConditionController.cs" />
+    <Compile Include="Controllers\AyohaRewardPointController.cs" />
+    <Compile Include="Controllers\AyohaRewardVoucher_EntitledUserController.cs" />
+    <Compile Include="Controllers\AyohaScanQrCodeActivityController.cs" />
+    <Compile Include="Controllers\AyohaStoreAnalsysController.cs" />
+    <Compile Include="Controllers\AyohaStoreOrderController.cs" />
+    <Compile Include="Controllers\AyohaStorePaymentController.cs" />
+    <Compile Include="Controllers\AyohaStore_CartController.cs" />
+    <Compile Include="Controllers\AyohaStore_LikeStatusController.cs" />
+    <Compile Include="Controllers\AyohaStore_SaleItemController.cs" />
+    <Compile Include="Controllers\AyohaStore_SaleItem_MembershipCardUsedController.cs" />
+    <Compile Include="Controllers\AyohaStore_ShippingAddressController.cs" />
+    <Compile Include="Controllers\AyohaUserGroupController.cs" />
+    <Compile Include="Controllers\AyohaUserProfileBankAccountController.cs" />
+    <Compile Include="Controllers\AyohaUserProfileController.cs" />
+    <Compile Include="Controllers\AyohaUserStampCardController.cs" />
+    <Compile Include="Controllers\BranchEnterpriseController.cs" />
+    <Compile Include="Controllers\BusinessModeController.cs" />
+    <Compile Include="Controllers\BusinessTypeController.cs" />
+    <Compile Include="Controllers\BusinessTypeGroupController.cs" />
+    <Compile Include="Controllers\ChargeDeliverySettingController.cs" />
+    <Compile Include="Controllers\CloudReceiptsMobileUserController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\DashboardAyohaRewardSummaryController.cs" />
+    <Compile Include="Controllers\DashboardAyohaUserController.cs" />
+    <Compile Include="Controllers\DashboardMerchantController.cs" />
+    <Compile Include="Controllers\DiscountCampaingController.cs" />
+    <Compile Include="Controllers\EmailController.cs" />
+    <Compile Include="Controllers\EnterpriseController.cs" />
+    <Compile Include="Controllers\EnterprisesBranchTypeController.cs" />
+    <Compile Include="Controllers\EnterprisesCheckInController.cs" />
+    <Compile Include="Controllers\EnterprisesController.cs" />
+    <Compile Include="Controllers\EnterprisesCoverMediaController.cs" />
+    <Compile Include="Controllers\EnterprisesFavoriteController.cs" />
+    <Compile Include="Controllers\EnterprisesOnlineStoreController.cs" />
+    <Compile Include="Controllers\EnterpriseSubscriberController.cs" />
+    <Compile Include="Controllers\EnterprisesWorkingHourController.cs" />
+    <Compile Include="Controllers\FlatBillController.cs" />
+    <Compile Include="Controllers\GPSUserController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoyaltyCardBackgroundImageController.cs" />
+    <Compile Include="Controllers\LoyaltyCardMemberController.cs" />
+    <Compile Include="Controllers\LoyaltyPointController.cs" />
+    <Compile Include="Controllers\LoyaltyPointRedeemPrizeHistoryController.cs" />
+    <Compile Include="Controllers\LoyaltyPointRedeemPrizeHistoryLogController.cs" />
+    <Compile Include="Controllers\LoyaltyStampController.cs" />
+    <Compile Include="Controllers\MasterMembershipsController.cs" />
+    <Compile Include="Controllers\MembershipCardCampaingEntitledController.cs" />
+    <Compile Include="Controllers\MembershipCardController.cs" />
+    <Compile Include="Controllers\MembershipCardEnterprisesEntitledController.cs" />
+    <Compile Include="Controllers\MembershipCardExtentController.cs" />
+    <Compile Include="Controllers\MembershipCardPaymentCycleController.cs" />
+    <Compile Include="Controllers\MembershipCardPaymentPlanController.cs" />
+    <Compile Include="Controllers\MembershipCardTermsController.cs" />
+    <Compile Include="Controllers\MembershipController.cs" />
+    <Compile Include="Controllers\MembershipLoyaltyProgramMasterController.cs" />
+    <Compile Include="Controllers\MembershipsController.cs" />
+    <Compile Include="Controllers\MerchantLinkTypeController.cs" />
+    <Compile Include="Controllers\MerchantLoyaltyCampaignController.cs" />
+    <Compile Include="Controllers\MerchantRewardController.cs" />
+    <Compile Include="Controllers\ModuleController.cs" />
+    <Compile Include="Controllers\NotificationsController.cs" />
+    <Compile Include="Controllers\OneSignalController.cs" />
+    <Compile Include="Controllers\PaymentGateWayBillTransactionController.cs" />
+    <Compile Include="Controllers\PaymentGatewayController.cs" />
+    <Compile Include="Controllers\PaymentMethodController.cs" />
+    <Compile Include="Controllers\PointCampaignController.cs" />
+    <Compile Include="Controllers\PointCampaignPointerController.cs" />
+    <Compile Include="Controllers\PointCampaignRedeemItemSettingController.cs" />
+    <Compile Include="Controllers\ReceiptsController.cs" />
+    <Compile Include="Controllers\ReceiptTemplateController.cs" />
+    <Compile Include="Controllers\RecipientSpecificMemberController.cs" />
+    <Compile Include="Controllers\RedeemApprovalStatusController.cs" />
+    <Compile Include="Controllers\RedeemItemController.cs" />
+    <Compile Include="Controllers\SMSController.cs" />
+    <Compile Include="Controllers\StampCampaignController.cs" />
+    <Compile Include="Controllers\StampCampaignEnterprisesController.cs" />
+    <Compile Include="Controllers\StampCampaignRubberStampController.cs" />
+    <Compile Include="Controllers\StampCampaignStamperController.cs" />
+    <Compile Include="Controllers\StampCardController.cs" />
+    <Compile Include="Controllers\StampContentDefaultTemplateController.cs" />
+    <Compile Include="Controllers\SubscriberController.cs" />
+    <Compile Include="Controllers\SubscriptionsController.cs" />
+    <Compile Include="Controllers\TemporaryStampQrCodeController.cs" />
+    <Compile Include="Controllers\TrackerDeviceController.cs" />
+    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\VIEW_MerchantDashboardController.cs" />
+    <Compile Include="Controllers\VIEW_merchantperk_ViewController.cs" />
+    <Compile Include="Controllers\VisitorAnalsysController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\HtmlUtility.cs" />
+    <Compile Include="Models\AdvertisementAnalsysModel.cs" />
+    <Compile Include="Models\AdvertisementApprovalStatusLogModel.cs" />
+    <Compile Include="Models\AdvertisementApprovalStatusModel.cs" />
+    <Compile Include="Models\AdvertisementAudioModel.cs" />
+    <Compile Include="Models\AdvertisementImagesModel.cs" />
+    <Compile Include="Models\AdvertisementLinkModuleModel.cs" />
+    <Compile Include="Models\AdvertisementModel.cs" />
+    <Compile Include="Models\AdvertisementTypeModel.cs" />
+    <Compile Include="Models\AdvertisementVideoModel.cs" />
+    <Compile Include="Models\AyohaEnterprisesUserModel.cs" />
+    <Compile Include="Models\AyohaEnterprisesUserStatusModel.cs" />
+    <Compile Include="Models\AyohaEnterprisesUserTypeModel.cs" />
+    <Compile Include="Models\AyohaEnterpriseUserModel.cs" />
+    <Compile Include="Models\AyohaeWalletAccountSettingModel.cs" />
+    <Compile Include="Models\AyohaeWalletModel.cs" />
+    <Compile Include="Models\AyohaeWalletTransactionCashOutModel.cs" />
+    <Compile Include="Models\AyohaeWalletTransactionModel.cs" />
+    <Compile Include="Models\AyohaeWalletTransactionTransferEwalletModel.cs" />
+    <Compile Include="Models\AyohaHotMerchantModel.cs" />
+    <Compile Include="Models\AyohaMembershipLevelDescModel.cs" />
+    <Compile Include="Models\AyohaMerchantInfo_MembershipLoyaltyProgramModel.cs" />
+    <Compile Include="Models\AyohaMerchantReviewModel.cs" />
+    <Compile Include="Models\AyohaNotificationMasterEnterprisesModel.cs" />
+    <Compile Include="Models\AyohaNotificationMasterModel.cs" />
+    <Compile Include="Models\AyohaNotificationModel.cs" />
+    <Compile Include="Models\AyohaPaymentMethodModel.cs" />
+    <Compile Include="Models\AyohaPointHistoryModel.cs" />
+    <Compile Include="Models\AyohaRedeemPrizeHistoryLogModel.cs" />
+    <Compile Include="Models\AyohaRedeemPrizeHistoryModel.cs" />
+    <Compile Include="Models\AyohaRedeemPrizeModel.cs" />
+    <Compile Include="Models\AyohaRewardContestantModel.cs" />
+    <Compile Include="Models\AyohaRewardContestModel.cs" />
+    <Compile Include="Models\AyohaRewardContestTapAndWinLogModel.cs" />
+    <Compile Include="Models\AyohaRewardContestTapAndWinPrizeAmountModel.cs" />
+    <Compile Include="Models\AyohaRewardContestTapAndWinSponsorModel.cs" />
+    <Compile Include="Models\AyohaRewardContest_SelfieAndWinModel.cs" />
+    <Compile Include="Models\AyohaRewardEventModel.cs" />
+    <Compile Include="Models\AyohaRewardEvent_RespondModel.cs" />
+    <Compile Include="Models\AyohaRewardMembershipTermAndConditionModel.cs" />
+    <Compile Include="Models\AyohaRewardPointModel.cs" />
+    <Compile Include="Models\AyohaRewardVoucherModel.cs" />
+    <Compile Include="Models\AyohaRewardVoucher_EntitledUserModel.cs" />
+    <Compile Include="Models\AyohaRewardVoucher_TransactionLogModel.cs" />
+    <Compile Include="Models\AyohaScanQrCodeActivityModel.cs" />
+    <Compile Include="Models\AyohaStoreAnalsysModel.cs" />
+    <Compile Include="Models\AyohaStoreOrderModel.cs" />
+    <Compile Include="Models\AyohaStorePaymentModel.cs" />
+    <Compile Include="Models\AyohaStore_CartModel.cs" />
+    <Compile Include="Models\AyohaStore_LikeStatusModel.cs" />
+    <Compile Include="Models\AyohaStore_SaleItemModel.cs" />
+    <Compile Include="Models\AyohaStore_SaleItem_MembershipCardUsedModel.cs" />
+    <Compile Include="Models\AyohaStore_ShippingAddressModel.cs" />
+    <Compile Include="Models\AyohaUserGroupModel.cs" />
+    <Compile Include="Models\AyohaUserProfileModel.cs" />
+    <Compile Include="Models\AyohaUserProfile_BankAccountModel.cs" />
+    <Compile Include="Models\AyohaUserStampCardModel.cs" />
+    <Compile Include="Models\BranchEnterpriseModel.cs" />
+    <Compile Include="Models\BusinessModeModel.cs" />
+    <Compile Include="Models\BusinessTypeGroupModel.cs" />
+    <Compile Include="Models\BusinessTypeModel.cs" />
+    <Compile Include="Models\ChargeDeliverySettingModel.cs" />
+    <Compile Include="Models\CloudReceiptsMobileUserModel.cs" />
+    <Compile Include="Models\CustomerModel.cs" />
+    <Compile Include="Models\DashboardAyohaRewardSummaryModel.cs" />
+    <Compile Include="Models\DashboardAyohaUserModel.cs" />
+    <Compile Include="Models\DashboardMerchantModel.cs" />
+    <Compile Include="Models\DiscountCampaignModel.cs" />
+    <Compile Include="Models\Emails.cs" />
+    <Compile Include="Models\EnterpriseModel.cs" />
+    <Compile Include="Models\EnterprisesBranchTypeModel.cs" />
+    <Compile Include="Models\EnterprisesCheckInModel.cs" />
+    <Compile Include="Models\EnterprisesCoverMediaModel.cs" />
+    <Compile Include="Models\EnterprisesFavoriteModel.cs" />
+    <Compile Include="Models\EnterprisesModel.cs" />
+    <Compile Include="Models\EnterprisesOnlineStoreModel.cs" />
+    <Compile Include="Models\EnterpriseSubscriberModel.cs" />
+    <Compile Include="Models\EnterprisesWorkingHourModel.cs" />
+    <Compile Include="Models\FlatBillModel.cs" />
+    <Compile Include="Models\GPSuserModel.cs" />
+    <Compile Include="Models\LoyaltyCardBackgroundImageModel.cs" />
+    <Compile Include="Models\LoyaltyCardMemberModel.cs" />
+    <Compile Include="Models\LoyaltyPointModel.cs" />
+    <Compile Include="Models\LoyaltyPointRedeemPrizeHistoryModel.cs" />
+    <Compile Include="Models\LoyaltyPoint_RedeemPrizeHistoryLogModel.cs" />
+    <Compile Include="Models\LoyaltyStampModel.cs" />
+    <Compile Include="Models\MasterMembershipsModel.cs" />
+    <Compile Include="Models\MembershipCardCampaingEntitledModel.cs" />
+    <Compile Include="Models\MembershipCardEnterprisesEntitledModel.cs" />
+    <Compile Include="Models\MembershipCardExtentModel.cs" />
+    <Compile Include="Models\MembershipCardModel.cs" />
+    <Compile Include="Models\MembershipCardPaymentCycleModel.cs" />
+    <Compile Include="Models\MembershipCardPaymentPlanModel.cs" />
+    <Compile Include="Models\MembershipCardTermsModel.cs" />
+    <Compile Include="Models\MembershipLoyaltyProgramMasterModel.cs" />
+    <Compile Include="Models\MembershipModel.cs" />
+    <Compile Include="Models\MembershipsModel.cs" />
+    <Compile Include="Models\MerchantLinkTypeModel.cs" />
+    <Compile Include="Models\MerchantLoyaltyCampaignModel.cs" />
+    <Compile Include="Models\MerchantRewardModel.cs" />
+    <Compile Include="Models\ModuleModel.cs" />
+    <Compile Include="Models\NotificationsModel.cs" />
+    <Compile Include="Models\OneSignalModel.cs" />
+    <Compile Include="Models\PaymentGateWayBillTransactionModel.cs" />
+    <Compile Include="Models\PaymentGatewayModel.cs" />
+    <Compile Include="Models\PaymentMethodModel.cs" />
+    <Compile Include="Models\PointCampaignModel.cs" />
+    <Compile Include="Models\PointCampaignPointerModel.cs" />
+    <Compile Include="Models\PointCampaignRedeemItemSettingModel.cs" />
+    <Compile Include="Models\ReceiptsModel.cs" />
+    <Compile Include="Models\ReceiptTemplateModel.cs" />
+    <Compile Include="Models\RecipientSpecificMemberModel.cs" />
+    <Compile Include="Models\RedeemApprovalStatusModel.cs" />
+    <Compile Include="Models\RedeemItemModel.cs" />
+    <Compile Include="Models\RegisteredAccountModel.cs" />
+    <Compile Include="Models\SMSModel.cs" />
+    <Compile Include="Models\SQLConnectionString.cs" />
+    <Compile Include="Models\StampCampaignEnterprisesModel.cs" />
+    <Compile Include="Models\StampCampaignModel.cs" />
+    <Compile Include="Models\StampCampaignRubberStampModel.cs" />
+    <Compile Include="Models\StampCampaignStamperModel.cs" />
+    <Compile Include="Models\StampCardModel.cs" />
+    <Compile Include="Models\StampContentDefaultTemplateModel.cs" />
+    <Compile Include="Models\SubscriberModel.cs" />
+    <Compile Include="Models\SubscriptionsModel.cs" />
+    <Compile Include="Models\SuccessCheckInModel.cs" />
+    <Compile Include="Models\TemporaryStampQrCodeModel.cs" />
+    <Compile Include="Models\TrackerDeviceModel.cs" />
+    <Compile Include="Models\VehiclesModel.cs" />
+    <Compile Include="Models\VIEW_MerchantDashboard.cs" />
+    <Compile Include="Models\VIEW_merchantperk_ViewModel.cs" />
+    <Compile Include="Models\VisitorAnalsysModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>17655</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:17655/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
