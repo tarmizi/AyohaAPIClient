@@ -1503,7 +1503,7 @@ namespace WebApiResit.Models
 
 
 
-
+        //test comment utk git
 
       public static List<MembershipCardModel> MembershipCard_LoadByEnterpriseAccNo_MerchantVersion_extMembershipCardCode(string EnterpriseAccNo,string MembershipCardCode)
       {
