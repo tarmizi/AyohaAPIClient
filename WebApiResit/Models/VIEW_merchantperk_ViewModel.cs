@@ -192,9 +192,20 @@ namespace WebApiResit.Models
         {
             get;
             set;
-        } 
+        }
 
-        
+        public string TodayCheckInCount
+        {
+            get;
+            set;
+        }
+        public string EnterpriseAddress
+        {
+            get;
+            set;
+        }
+
+
         public VIEW_merchantperk_ViewModel() { }
 
 
@@ -414,6 +425,8 @@ namespace WebApiResit.Models
                             _result.BusinessMode = _SQLDataReader["BusinessMode"].ToString();
                             _result.EnterpriseDescription = _SQLDataReader["EnterpriseDescription"].ToString();
                             _result.SearchCol = _SQLDataReader["SearchCol"].ToString();
+                            _result.TodayCheckInCount = _SQLDataReader["TodayCheckInCount"].ToString();
+                            _result.EnterpriseAddress = _SQLDataReader["EnterpriseAddress"].ToString();
                             _Value.Add(_result);
                         }
                     }

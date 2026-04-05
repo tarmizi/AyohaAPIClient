@@ -428,7 +428,31 @@ namespace WebApiResit.Models
             get;
             set;
         }
-        
+
+
+
+
+
+
+
+
+
+        public string EnterpriseMode
+        {
+            get;
+            set;
+        }
+        public string Bandar
+        {
+            get;
+            set;
+        }
+        public string Negeri
+        {
+            get;
+            set;
+        }
+
 
         public MembershipCardModel() { }
 
@@ -1152,7 +1176,17 @@ namespace WebApiResit.Models
                           _result.ValidUntilDate = _SQLDataReader["ValidUntilDate"].ToString();
                           _result.MembershipDate = String.Format("{0:MM/yy}", _SQLDataReader["MembershipDate"]);
                           _result.TodayCheckInCount =Convert.ToInt32(_SQLDataReader["TodayCheckInCount"].ToString());
-                          _Value.Add(_result);
+
+                            _result.EnterpriseMode = _SQLDataReader["EnterpriseMode"].ToString();
+                            _result.Bandar = _SQLDataReader["Bandar"].ToString();
+                            _result.Negeri = _SQLDataReader["Negeri"].ToString();
+
+
+
+
+
+
+                            _Value.Add(_result);
 
 
                       }

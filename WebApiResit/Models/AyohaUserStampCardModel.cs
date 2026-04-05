@@ -385,7 +385,20 @@ namespace WebApiResit.Models
             get;
             set;
         }
+
+
+
+        public string TodayCheckInCount
+        {
+            get;
+            set;
+        }
+
+
         
+
+
+
         public int RowNumber { get; set; } // <--- Add this
         public AyohaUserStampCardModel() { }
 
@@ -1425,7 +1438,7 @@ namespace WebApiResit.Models
                                _result.MembershipCardFeePaymentCycle = _SQLDataReader["MembershipCardFeePaymentCycle"].ToString();
                                _result.BusinessMode = _SQLDataReader["BusinessMode"].ToString();
                                _result.EnterpriseDescription = _SQLDataReader["EnterpriseDescription"].ToString();
-                            
+                            _result.TodayCheckInCount = _SQLDataReader["TodayCheckInCount"].ToString();
                             _Value.Add(_result);
                         }
                     }

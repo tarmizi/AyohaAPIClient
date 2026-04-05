@@ -213,7 +213,24 @@ namespace WebApiResit.Models
             get;
             set;
         }
-        
+
+
+
+
+
+        public string TodayCheckInCount
+        {
+            get;
+            set;
+        }
+
+
+        public string EnterpriseAddress
+        {
+            get;
+            set;
+        }
+
         public AyohaRewardVoucher_EntitledUserModel() { }
 
 
@@ -594,8 +611,9 @@ namespace WebApiResit.Models
                             _result.EnterpriseAccNo = _SQLDataReader["EnterpriseAccNo"].ToString();
                             _result.MembershipCardFeePaymentCycle = _SQLDataReader["MembershipCardFeePaymentCycle"].ToString();
                             _result.SearchCol = _SQLDataReader["EnterpriseName"].ToString() + '|' + _SQLDataReader["VoucherName"].ToString();
-                            
 
+                            _result.TodayCheckInCount = _SQLDataReader["TodayCheckInCount"].ToString();
+                            _result.EnterpriseAddress = _SQLDataReader["EnterpriseAddress"].ToString();
 
 
 

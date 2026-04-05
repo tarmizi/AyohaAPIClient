@@ -229,14 +229,14 @@ namespace WebApiResit.Controllers
 
         [HttpGet]
         [EnableCors(origins: "*", headers: "X-Requested-With", methods: "GET,POST,PUT,DELETE,OPTIONS")]
-        public JsonResult AdvertisementloadPremiumAdvertisment()
+        public JsonResult AdvertisementloadPremiumAdvertisment(string SubscriberAccNo)
         {
             bool success = true;
             string _Message = string.Empty;
             List<AdvertisementModel> data = new List<AdvertisementModel>();
             try
             {
-                data = AdvertisementModel.Advertisement_load_Premium_Advertisment();
+                data = AdvertisementModel.Advertisement_load_Premium_Advertisment(SubscriberAccNo);
             }
             catch (Exception ex)
             {

@@ -329,7 +329,23 @@ namespace WebApiResit.Models
             get;
             set;
         }
-        
+
+
+
+
+        public string TodayCheckInCount
+        {
+            get;
+            set;
+        }
+
+
+        public string EnterpriseAddress
+        {
+            get;
+            set;
+        }
+
         public MerchantLoyaltyCampaignModel() { }
 
 
@@ -380,6 +396,8 @@ namespace WebApiResit.Models
                             _result.MembershipCardFeePaymentCycle = _SQLDataReader["MembershipCardFeePaymentCycle"].ToString();
                             _result.BusinessMode = _SQLDataReader["BusinessMode"].ToString();
                             _result.EnterpriseDescription = _SQLDataReader["EnterpriseDescription"].ToString();
+                            _result.TodayCheckInCount = _SQLDataReader["TodayCheckInCount"].ToString();
+                            _result.EnterpriseAddress = _SQLDataReader["EnterpriseAddress"].ToString();
 
                             _Value.Add(_result);
                         }
@@ -450,7 +468,7 @@ namespace WebApiResit.Models
                             _result.MembershipCardFeePaymentCycle = _SQLDataReader["MembershipCardFeePaymentCycle"].ToString();
                             _result.BusinessMode = _SQLDataReader["BusinessMode"].ToString();
                             _result.EnterpriseDescription = _SQLDataReader["EnterpriseDescription"].ToString();
-                            _result.isMember = _SQLDataReader["isMember"].ToString();
+                            _result.isMember = _SQLDataReader["isMember"].ToString();                         
                             _Value.Add(_result);
                         }
                     }
@@ -521,6 +539,9 @@ namespace WebApiResit.Models
                             _result.EnterpriseDescription = _SQLDataReader["EnterpriseDescription"].ToString();
                             _result.MembershipCardFeePaymentCycle = _SQLDataReader["MembershipCardFeePaymentCycle"].ToString();
 
+                            _result.TodayCheckInCount = _SQLDataReader["TodayCheckInCount"].ToString();
+                            _result.EnterpriseAddress = _SQLDataReader["EnterpriseAddress"].ToString();
+
                             _Value.Add(_result);
                         }
                     }
@@ -590,6 +611,8 @@ namespace WebApiResit.Models
                             _result.BusinessMode = _SQLDataReader["BusinessMode"].ToString();
                             _result.EnterpriseDescription = _SQLDataReader["EnterpriseDescription"].ToString();
                             _result.MembershipCardFeePaymentCycle = _SQLDataReader["MembershipCardFeePaymentCycle"].ToString();
+                            _result.TodayCheckInCount = _SQLDataReader["TodayCheckInCount"].ToString();
+                            _result.EnterpriseAddress = _SQLDataReader["EnterpriseAddress"].ToString();
 
                             _Value.Add(_result);
                         }
@@ -662,6 +685,8 @@ namespace WebApiResit.Models
                             _result.BusinessMode = _SQLDataReader["BusinessMode"].ToString();
                             _result.EnterpriseDescription = _SQLDataReader["EnterpriseDescription"].ToString();
                             _result.MembershipCardFeePaymentCycle = _SQLDataReader["MembershipCardFeePaymentCycle"].ToString();
+                            _result.TodayCheckInCount = _SQLDataReader["TodayCheckInCount"].ToString();
+                            _result.EnterpriseAddress = _SQLDataReader["EnterpriseAddress"].ToString();
 
                             _Value.Add(_result);
                         }

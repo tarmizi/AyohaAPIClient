@@ -290,7 +290,16 @@ namespace WebApiResit.Models
         {
             get;
             set;
-        }    
+        }
+
+
+
+        public string TodayCheckInCount
+        {
+            get;
+            set;
+        }
+        
         public AdvertisementModel() { }
 
              
@@ -945,7 +954,7 @@ namespace WebApiResit.Models
         }
 
 
-        public static List<AdvertisementModel> Advertisement_load_Premium_Advertisment()
+        public static List<AdvertisementModel> Advertisement_load_Premium_Advertisment(string SubscriberAccNo)
         {
             List<AdvertisementModel> _Value = new List<AdvertisementModel>();
 
@@ -961,6 +970,7 @@ namespace WebApiResit.Models
                     {
                         _SQLCommand.Connection = _DBConnection;
                         _SQLCommand.CommandText = "Advertisement_load_Premium_Advertisment";
+                        _SQLCommand.Parameters.AddWithValue("@SubscriberAccNo", SubscriberAccNo);
 
                         _DBConnection.Open();
                         SqlDataReader _SQLDataReader = _SQLCommand.ExecuteReader();
@@ -988,7 +998,7 @@ namespace WebApiResit.Models
                             _result.AverageRating = _SQLDataReader["AverageRating"].ToString();
                             _result.TotalReviews = _SQLDataReader["TotalReviews"].ToString();
                             _result.EnterpriseAddress = _SQLDataReader["EnterpriseAddress"].ToString();
-                            
+                            _result.TodayCheckInCount = _SQLDataReader["TodayCheckInCount"].ToString();
                             _Value.Add(_result);
                         }
                     }
