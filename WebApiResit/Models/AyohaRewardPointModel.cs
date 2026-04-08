@@ -293,6 +293,21 @@ namespace WebApiResit.Models
             get;
             set;
         }
+
+
+        public int RowNumber
+        {
+            get;
+            set;
+        }
+
+        public int MyRanking
+        {
+            get;
+            set;
+        }
+
+
         public AyohaRewardPointModel() { }
 
 
@@ -491,7 +506,7 @@ namespace WebApiResit.Models
 
 
 
-        public static List<AyohaRewardPointModel> AyohaRewardPoint_RewardRanking(string RankingLevel)
+        public static List<AyohaRewardPointModel> AyohaRewardPoint_RewardRanking(string RankingLevel, string SubscriberAccNo)
         {
             List<AyohaRewardPointModel> _Value = new List<AyohaRewardPointModel>();
 
@@ -508,6 +523,7 @@ namespace WebApiResit.Models
                         _SQLCommand.Connection = _DBConnection;
                         _SQLCommand.CommandText = "AyohaRewardPoint_RewardRanking";
                         _SQLCommand.Parameters.AddWithValue("@RankingLevel", RankingLevel);
+                        _SQLCommand.Parameters.AddWithValue("@SubscriberAccNo", RankingLevel);
                         _DBConnection.Open();
                         SqlDataReader _SQLDataReader = _SQLCommand.ExecuteReader();
                         AyohaRewardPointModel _result;
@@ -522,7 +538,8 @@ namespace WebApiResit.Models
                             _result.AyohaPoint = _SQLDataReader["AyohaPoint"].ToString();
                             _result.JoinDate_DateOnly = String.Format("{0:d/M/yyyy}", _SQLDataReader["JoinDate"]);
                             _result.JoinDate_TimeOnly = String.Format("{0:T}", _SQLDataReader["JoinDate"]);
-                            
+                            _result.RowNumber =Convert.ToInt32(_SQLDataReader["RowNumber"].ToString());
+                            _result.MyRanking = Convert.ToInt32(_SQLDataReader["MyRanking"].ToString());
                             _Value.Add(_result);
                         }
                     }

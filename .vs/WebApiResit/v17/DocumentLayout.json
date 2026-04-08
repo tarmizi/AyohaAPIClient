@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\AyohaClient7Api\\WebApiResit\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|C:\\AyohaClient7Api\\WebApiResit\\webapiresit\\controllers\\ayoharewardpointcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|solutionrelative:webapiresit\\controllers\\ayoharewardpointcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|C:\\AyohaClient7Api\\WebApiResit\\webapiresit\\controllers\\ayoharewardvoucher_entitledusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|solutionrelative:webapiresit\\controllers\\ayoharewardvoucher_entitledusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|c:\\ayohaclient7api\\webapiresit\\webapiresit\\models\\ayoharewardpointmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|solutionrelative:webapiresit\\models\\ayoharewardpointmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|c:\\ayohaclient7api\\webapiresit\\webapiresit\\models\\membershipcardmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|solutionrelative:webapiresit\\models\\membershipcardmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|solutionrelative:webapiresit\\models\\merchantloyaltycampaignmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|C:\\AyohaClient7Api\\WebApiResit\\webapiresit\\controllers\\ayoharewardvoucher_entitledusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|solutionrelative:webapiresit\\controllers\\ayoharewardvoucher_entitledusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|C:\\AyohaClient7Api\\WebApiResit\\webapiresit\\controllers\\merchantloyaltycampaigncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|solutionrelative:webapiresit\\controllers\\merchantloyaltycampaigncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -51,10 +59,6 @@
       "RelativeMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|solutionrelative:webapiresit\\controllers\\view_merchantperk_viewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|C:\\AyohaClient7Api\\WebApiResit\\webapiresit\\controllers\\ayoharewardpointcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|solutionrelative:webapiresit\\controllers\\ayoharewardpointcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|C:\\AyohaClient7Api\\WebApiResit\\webapiresit\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{CBD57F4F-0C24-49AC-A3EC-FDA81DE88BBF}|WebApiResit\\WebApiResit.csproj|solutionrelative:webapiresit\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
@@ -66,60 +70,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "AyohaRewardPointModel.cs",
+              "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Models\\AyohaRewardPointModel.cs",
+              "RelativeDocumentMoniker": "WebApiResit\\Models\\AyohaRewardPointModel.cs",
+              "ToolTip": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Models\\AyohaRewardPointModel.cs",
+              "RelativeToolTip": "WebApiResit\\Models\\AyohaRewardPointModel.cs",
+              "ViewState": "AgIAABoBAAAAAAAAAAAnwC8BAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T13:23:16.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MembershipCardModel.cs",
               "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Models\\MembershipCardModel.cs",
               "RelativeDocumentMoniker": "WebApiResit\\Models\\MembershipCardModel.cs",
               "ToolTip": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Models\\MembershipCardModel.cs",
               "RelativeToolTip": "WebApiResit\\Models\\MembershipCardModel.cs",
-              "ViewState": "AgIAAPUFAAAAAAAAAAAAwAoGAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAMwFAAAAAAAAAAAAwOEFAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-15T05:58:27.94Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdvertisementController.cs",
-              "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Controllers\\AdvertisementController.cs",
-              "RelativeDocumentMoniker": "WebApiResit\\Controllers\\AdvertisementController.cs",
-              "ToolTip": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Controllers\\AdvertisementController.cs",
-              "RelativeToolTip": "WebApiResit\\Controllers\\AdvertisementController.cs",
-              "ViewState": "AgIAANwAAAAAAAAAAAAuwN4AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T16:09:42.621Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "AyohaRewardVoucher_EntitledUserController.cs",
               "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Controllers\\AyohaRewardVoucher_EntitledUserController.cs",
               "RelativeDocumentMoniker": "WebApiResit\\Controllers\\AyohaRewardVoucher_EntitledUserController.cs",
               "ToolTip": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Controllers\\AyohaRewardVoucher_EntitledUserController.cs",
               "RelativeToolTip": "WebApiResit\\Controllers\\AyohaRewardVoucher_EntitledUserController.cs",
-              "ViewState": "AgIAALIAAAAAAAAAAAAuwLkAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAALIAAAAAAAAAAAA+wLkAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T08:10:00.396Z"
+              "WhenOpened": "2026-03-30T08:10:00.396Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MerchantLoyaltyCampaignModel.cs",
-              "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Models\\MerchantLoyaltyCampaignModel.cs",
-              "RelativeDocumentMoniker": "WebApiResit\\Models\\MerchantLoyaltyCampaignModel.cs",
-              "ToolTip": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Models\\MerchantLoyaltyCampaignModel.cs",
-              "RelativeToolTip": "WebApiResit\\Models\\MerchantLoyaltyCampaignModel.cs",
-              "ViewState": "AgIAAEMBAAAAAAAAAAAAwFoBAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T07:53:56.936Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "MerchantLoyaltyCampaignController.cs",
               "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Controllers\\MerchantLoyaltyCampaignController.cs",
               "RelativeDocumentMoniker": "WebApiResit\\Controllers\\MerchantLoyaltyCampaignController.cs",
@@ -131,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MembershipCardController.cs",
               "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Controllers\\MembershipCardController.cs",
               "RelativeDocumentMoniker": "WebApiResit\\Controllers\\MembershipCardController.cs",
@@ -143,7 +137,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "AyohaRewardPointController.cs",
+              "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Controllers\\AyohaRewardPointController.cs",
+              "RelativeDocumentMoniker": "WebApiResit\\Controllers\\AyohaRewardPointController.cs",
+              "ToolTip": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Controllers\\AyohaRewardPointController.cs",
+              "RelativeToolTip": "WebApiResit\\Controllers\\AyohaRewardPointController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAcwDsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T06:05:52.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MerchantLoyaltyCampaignModel.cs",
+              "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Models\\MerchantLoyaltyCampaignModel.cs",
+              "RelativeDocumentMoniker": "WebApiResit\\Models\\MerchantLoyaltyCampaignModel.cs",
+              "ToolTip": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Models\\MerchantLoyaltyCampaignModel.cs",
+              "RelativeToolTip": "WebApiResit\\Models\\MerchantLoyaltyCampaignModel.cs",
+              "ViewState": "AgIAAEMBAAAAAAAAAAAAwFoBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T07:53:56.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdvertisementController.cs",
+              "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Controllers\\AdvertisementController.cs",
+              "RelativeDocumentMoniker": "WebApiResit\\Controllers\\AdvertisementController.cs",
+              "ToolTip": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Controllers\\AdvertisementController.cs",
+              "RelativeToolTip": "WebApiResit\\Controllers\\AdvertisementController.cs",
+              "ViewState": "AgIAANwAAAAAAAAAAAAuwN4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T16:09:42.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "AyohaRewardVoucher_EntitledUserModel.cs",
               "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Models\\AyohaRewardVoucher_EntitledUserModel.cs",
               "RelativeDocumentMoniker": "WebApiResit\\Models\\AyohaRewardVoucher_EntitledUserModel.cs",
@@ -155,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "AdvertisementModel.cs",
               "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Models\\AdvertisementModel.cs",
               "RelativeDocumentMoniker": "WebApiResit\\Models\\AdvertisementModel.cs",
@@ -167,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "AyohaUserStampCardModel.cs",
               "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Models\\AyohaUserStampCardModel.cs",
               "RelativeDocumentMoniker": "WebApiResit\\Models\\AyohaUserStampCardModel.cs",
@@ -179,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "VIEW_merchantperk_ViewModel.cs",
               "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Models\\VIEW_merchantperk_ViewModel.cs",
               "RelativeDocumentMoniker": "WebApiResit\\Models\\VIEW_merchantperk_ViewModel.cs",
@@ -191,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "VIEW_merchantperk_ViewController.cs",
               "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Controllers\\VIEW_merchantperk_ViewController.cs",
               "RelativeDocumentMoniker": "WebApiResit\\Controllers\\VIEW_merchantperk_ViewController.cs",
@@ -203,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "AyohaUserStampCardController.cs",
               "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Controllers\\AyohaUserStampCardController.cs",
               "RelativeDocumentMoniker": "WebApiResit\\Controllers\\AyohaUserStampCardController.cs",
@@ -215,19 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AyohaRewardPointController.cs",
-              "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Controllers\\AyohaRewardPointController.cs",
-              "RelativeDocumentMoniker": "WebApiResit\\Controllers\\AyohaRewardPointController.cs",
-              "ToolTip": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Controllers\\AyohaRewardPointController.cs",
-              "RelativeToolTip": "WebApiResit\\Controllers\\AyohaRewardPointController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T06:05:52.567Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\AyohaClient7Api\\WebApiResit\\WebApiResit\\Web.config",
               "RelativeDocumentMoniker": "WebApiResit\\Web.config",

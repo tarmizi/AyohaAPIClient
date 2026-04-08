@@ -56,14 +56,14 @@ namespace WebApiResit.Controllers
 
         [HttpGet]
         [EnableCors(origins: "*", headers: "X-Requested-With", methods: "GET,POST,PUT,DELETE,OPTIONS")]
-        public JsonResult AyohaRewardPointRewardRanking(string RankingLevel)
+        public JsonResult AyohaRewardPointRewardRanking(string RankingLevel, string SubscriberAccNo)
         {
             bool success = true;
             string _Message = string.Empty;
             List<AyohaRewardPointModel> data = new List<AyohaRewardPointModel>();
             try
             {
-                data = AyohaRewardPointModel.AyohaRewardPoint_RewardRanking(RankingLevel);
+                data = AyohaRewardPointModel.AyohaRewardPoint_RewardRanking(RankingLevel, SubscriberAccNo);
             }
             catch (Exception ex)
             {
